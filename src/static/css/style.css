@@ -1,0 +1,211 @@
+html,
+body {
+  height:100%;
+  min-height:100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#top {
+  background-color: white;
+  width: 100%;
+  min-height: 5%;
+  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  height: 50px;
+  overflow: hidden;
+}
+
+.logo img {
+  height: 30px;
+  margin: 10px 0 10px;
+}
+
+
+.nav ul {
+  list-style: none;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.nav ul li {
+  float: left;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: .2rem;
+  margin-right: 35px;
+  margin-bottom: 0;
+  text-decoration: none;
+  height: 100%;
+  line-height: 5rem;
+}
+
+.nav ul li a {
+  color: black;
+}
+.nav ul li a:hover {
+  color: #1EAEDB;
+}
+
+.nav .navMenuWithLogo {
+  display: table;
+  vertical-align: middle;
+  line-height: 0;
+  height: 100%;
+}
+
+.nav .navMenuWithLogo div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.nav .navMenuWithLogo img {
+  display: table-cell;
+  width: 30px;
+  padding: 10px 5px;
+}
+
+#content {
+  position: relative;
+  padding: 20px 0 0 0;
+  min-height: 85%;
+}
+
+#content .heroMessage {
+}
+
+#content .heroImage {
+}
+
+#content .heroImage > img {
+  width: 100%;
+  height: 100%;
+}
+
+#bottom {
+  background-color: white;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+#copyright {
+  margin-top: 5px;
+  font-weight: 300;
+}
+
+#copyright .brand {
+  font-size: 14px;
+}
+#copyright .rights {
+  font-size: 10px
+}
+
+.footerLogo > img {
+  height: 40px;
+  margin: 10px 0 10px 0;
+}
+
+.footerMenu {
+    margin: 10px 0 10px 0;
+    font-size: 12px;
+}
+
+#company tr td {
+  border-bottom: none;
+}
+
+.heroBox {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.heroDownLoadBox {
+  text-align: center;
+}
+
+.versionSupport {
+  display: block;
+  color: #849189;
+  font-size: 10px;
+  }
+
+
+.featureBox {
+  text-align: center;
+}
+
+.featureHeadline {
+  font-size: 16px;
+  font-weight: bold;
+  color: #E64A19;
+}
+
+.featureDetail {
+  font-size: 15px;
+}
+
+.sectionWhite {
+  background-color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.sectionGray {
+  background-color: #EBEBEB;
+  padding: 50px 0;
+}
+
+.h1Thin {
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.h2Thin {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.h2Center {
+  text-align: center;
+}
+
+.imageColumn > img {
+  width: 100%;
+  height: 100%;
+}
+
+.themeSamples {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: black;
+}
+
