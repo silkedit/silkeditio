@@ -1,6 +1,7 @@
-# How to deply
+# ローカル環境での開発
 
 
 ```
-cmd/sync
+$ npm install
+$ npm start
 ```
