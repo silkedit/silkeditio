@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "node ./node_modules/.bin/http-server ./src"
+    "deploy": "grunt deploy",
+    "start": "grunt dev"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,16 @@
   "author": "",
   "license": "ISC",
   "homepage": "https://bitbucket.org/silkedit/silkeditio#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-ejs-locals": "^0.1.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-rsync": "^1.0.1",
+    "load-grunt-config": "^0.19.2"
+  },
   "devDependencies": {
-    "http-server": "^0.9.0"
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-concurrent": "^2.3.0",
+    "grunt-http-server": "^1.16.0"
   }
 }
