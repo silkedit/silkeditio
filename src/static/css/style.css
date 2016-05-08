@@ -209,3 +209,8 @@ a:hover {
   color: black;
 }
 
+.release-date {
+  font-size: 10pt;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
