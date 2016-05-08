@@ -1,11 +1,11 @@
 deploy:
   - concat
   - ejs
-  - rsync  
+  - rsync
 
 dev:
-  - rsync
   - concat
   - ejs
+  - rsync
   - concurrent
 
