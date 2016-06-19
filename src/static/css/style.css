@@ -26,6 +26,11 @@ a:hover {
   cursor: pointer;
 }
 
+#twitterWidget {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
 
 #top {
   background-color: white;
