@@ -223,3 +223,7 @@ a:hover {
   margin-top: -2rem;
   margin-bottom: 2rem;
 }
+
+section.container {
+  margin-bottom: 20px;
+}
