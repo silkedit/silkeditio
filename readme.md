@@ -14,5 +14,5 @@ sudo HOST=0.0.0.0 PORT=80 npm start
 # デプロイ
 
 ```
-$ npm run deploy
+$ ./deploy.sh
 ```
