@@ -1,18 +1,13 @@
 'use strict';
 (function(platform, $){
-  var DOWNLOAD_BASE_PATH = 'https://silkedit.io/download/latest/';
-  var OSX = {
-    fileUrl: DOWNLOAD_BASE_PATH + 'SilkEdit.dmg',
-    ga: "ga('send', 'event', 'download', 'latest/SilkEdit.dmg', 'Mac');",
-    desc: "OSX 10.9 or later"
-  };
+  var DOWNLOAD_BASE_PATH = 'https://github.com/silkedit/silkedit/releases/download/v0.13.1/';
   var WINx64 = {
-    fileUrl: DOWNLOAD_BASE_PATH + 'SilkEdit Setup x64.exe',
+    fileUrl: DOWNLOAD_BASE_PATH + 'SilkEdit_Setup_x64.exe',
     ga: "ga('send', 'event', 'download', 'latest/SilkEdit Setup x64.exe', 'Win x64');",
     desc: "Windows 7 or later"
   };
   var WINx32 = {
-    fileUrl: DOWNLOAD_BASE_PATH + 'SilkEdit Setup x86.exe',
+    fileUrl: DOWNLOAD_BASE_PATH + 'SilkEdit_Setup_x86.exe',
     ga: "ga('send', 'event', 'download', 'latest/SilkEdit Setup x86.exe', 'Win x86');",
     desc: "Windows 7 or later"
   };
