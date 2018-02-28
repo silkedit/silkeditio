@@ -2,19 +2,14 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-# Build the project. 
+# from https://gist.github.com/cobyism/4730490
+# 1. Set up a worktree in directory dist checked out on branch gh-pages
+git worktree add dist gh-pages
+# 2. Build whatever needs to be in dist however you like
 npm run deploy
-
-# Add changes to git.
-git add -A
-
-# Commit changes.
-msg="rebuilding site `date`"
-if [ $# -eq 1 ]
-  then msg="$1"
-fi
-git commit -m "$msg"
-
-# Push source and build repos.
-git push origin master
-git subtree push --prefix=public git@github.com:silkedit/silkeditio.git gh-pages
+# 3. Add everything in dist
+(cd public; git add .)
+# 4. Commit, with some nice message to link to sources commit
+(cd public; git commit -m "Build output as of $(git log '--format=format:%H' master -1)")
+# 5. Push
+git push origin gh-pages
