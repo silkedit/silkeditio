@@ -4,7 +4,7 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # from https://gist.github.com/cobyism/4730490
 # 1. Set up a worktree in directory dist checked out on branch gh-pages
-git worktree add dist gh-pages
+git worktree add public gh-pages
 # 2. Build whatever needs to be in dist however you like
 npm run deploy
 # 3. Add everything in dist
@@ -13,3 +13,7 @@ npm run deploy
 (cd public; git commit -m "Build output as of $(git log '--format=format:%H' master -1)")
 # 5. Push
 git push origin gh-pages
+
+# Cleanup
+rm -rf public
+git worktree prune

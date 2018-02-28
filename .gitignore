@@ -1,6 +1,7 @@
 .tern-port
 bower_components
 src/post/release.ejs
+/.history
 
 
 ### https://raw.github.com/github/gitignore/0dbd791269e83d241dfd0a952f461d9a9302d518/Global/OSX.gitignore
@@ -160,6 +161,3 @@ build/Release
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
 
-
-/public
-/.history
