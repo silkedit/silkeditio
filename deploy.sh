@@ -1,6 +1,8 @@
 # !/bin/bash
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+rm -rf public
+git worktree prune
 
 # from https://gist.github.com/cobyism/4730490
 # 1. Set up a worktree in directory dist checked out on branch gh-pages
